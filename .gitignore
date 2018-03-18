@@ -1,0 +1,17 @@
+*\.idea*
+*.xml
+*.iml
+*.txt
+*.exe
+*.ilk
+*.ipch
+*.vcxproj
+*.idb
+*.pdb
+*.cmake
+*.tar
+*.check_cache
+*.bin
+*.log
+*cmake-*
+*Debug*
