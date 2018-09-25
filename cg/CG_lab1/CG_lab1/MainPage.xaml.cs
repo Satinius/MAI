@@ -4,6 +4,8 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Shapes;
 
+//Sevastyanov Viktor M80-307B MAI 2018
+
 namespace CG_lab1
 {
      public sealed partial class MainPage : Page
@@ -13,6 +15,7 @@ namespace CG_lab1
             this.InitializeComponent();
         }
 
+        //построение графика функции rho = (a * cos2phi)/cosphi
         private void drawCurve(object sender, TappedRoutedEventArgs e)
         {
             var a = float.Parse(input_a.Text, System.Globalization.CultureInfo.InvariantCulture);
@@ -26,10 +29,10 @@ namespace CG_lab1
             var points = new PointCollection();
             var point_count = 100;
             var delta = (B - A) / point_count;
-            var scaling = 25;
+            var scaling = 25 / Math.Abs(a);
             for (var phi = A; phi <= B; phi += delta)
             {
-                var rho = Math.Cos(2 * phi) / Math.Cos(phi);
+                var rho = a * Math.Cos(2 * phi) / Math.Cos(phi);
                 var x = (rho * Math.Cos(phi) * scaling + Graphic.Width / 2);
                 var y = (rho * Math.Sin(phi) * scaling + Graphic.Height / 2);
                 System.Diagnostics.Debug.WriteLine($"({x},{y}), ({phi}, {rho})");

@@ -553,6 +553,12 @@
     <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\mai\cg\CG_lab1\CG_lab1\bin\x64\Debug\CG_lab1.xr.xml">
       <PackagePath>CG_lab1.xr.xml</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\mai\cg\CG_lab1\CG_lab1\bin\x64\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\mai\cg\CG_lab1\CG_lab1\bin\x64\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17134.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
