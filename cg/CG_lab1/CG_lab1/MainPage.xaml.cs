@@ -1,27 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
 using Windows.UI.Xaml.Shapes;
-
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
 namespace CG_lab1
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
-    public sealed partial class MainPage : Page
+     public sealed partial class MainPage : Page
     {
         public MainPage()
         {
@@ -39,9 +24,9 @@ namespace CG_lab1
                 StrokeThickness = 2
             };
             var points = new PointCollection();
-            var point_count = int.Parse(pointsCount.Text);
+            var point_count = 100;
             var delta = (B - A) / point_count;
-            var scaling = int.Parse(Scale.Text);
+            var scaling = 25;
             for (var phi = A; phi <= B; phi += delta)
             {
                 var rho = Math.Cos(2 * phi) / Math.Cos(phi);

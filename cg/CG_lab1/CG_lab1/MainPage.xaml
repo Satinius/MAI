@@ -35,14 +35,7 @@
                     <TextBox FontSize="20" Name="input_a" Text="2"></TextBox>
                 </StackPanel>
                 <Button Tapped="drawCurve" Content="Построить график" Grid.Row="2" Grid.Column="0" Margin="10" FontSize="20"></Button>
-                <StackPanel Grid.Column="1" Grid.Row="1" Orientation="Horizontal" VerticalAlignment="Center">
-                    <TextBlock FontSize="20">Количество точек =</TextBlock>
-                    <TextBox Name="pointsCount" Text="1000" FontSize="20"></TextBox>
-                </StackPanel>
-                <StackPanel Grid.Column="2" Grid.Row="1" Orientation="Horizontal" VerticalAlignment="Center">
-                    <TextBlock FontSize="20">Масштабирование =</TextBlock>
-                    <TextBox FontSize="20" Name="Scale" Text="25"></TextBox>
-                </StackPanel>
+               
             </Grid>
             <Grid Name="Graphic" Height="500" Width="500">
             </Grid>

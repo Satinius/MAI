@@ -7010,11 +7010,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\source\\repos\\CG_lab1\\CG_lab1\\CG_lab1.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\mai\\cg\\CG_lab1\\CG_lab1\\CG_lab1.csproj",
       "projectName": "CG_lab1",
-      "projectPath": "C:\\Users\\User\\source\\repos\\CG_lab1\\CG_lab1\\CG_lab1.csproj",
+      "projectPath": "C:\\Users\\User\\Documents\\GitHub\\mai\\cg\\CG_lab1\\CG_lab1\\CG_lab1.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\source\\repos\\CG_lab1\\CG_lab1\\obj\\",
+      "outputPath": "C:\\Users\\User\\Documents\\GitHub\\mai\\cg\\CG_lab1\\CG_lab1\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
