@@ -1,0 +1,53 @@
+﻿<Page
+    x:Class="CG_lab1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CG_lab1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        
+        <StackPanel Orientation="Vertical">
+            <TextBlock Margin="20" FontSize="20" HorizontalAlignment="Center" Text="rho = (a * cos2phi)/cosphi, -pi &lt; A &lt;= phi &lt;= B &lt; pi"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="0">
+                    <TextBlock FontSize="20">A = </TextBlock>
+                    <TextBox FontSize="20" Name="input_A" Text="-2"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="0">
+                    <TextBlock FontSize="20">B =</TextBlock>
+                    <TextBox FontSize="20" Name="input_B" Text="3"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Grid.Column="2" Grid.Row="0">
+                    <TextBlock FontSize="20">a =</TextBlock>
+                    <TextBox FontSize="20" Name="input_a" Text="2"></TextBox>
+                </StackPanel>
+                <Button Tapped="drawCurve" Content="Построить график" Grid.Row="2" Grid.Column="0" Margin="10" FontSize="20"></Button>
+                <StackPanel Grid.Column="1" Grid.Row="1" Orientation="Horizontal" VerticalAlignment="Center">
+                    <TextBlock FontSize="20">Количество точек =</TextBlock>
+                    <TextBox Name="pointsCount" Text="1000" FontSize="20"></TextBox>
+                </StackPanel>
+                <StackPanel Grid.Column="2" Grid.Row="1" Orientation="Horizontal" VerticalAlignment="Center">
+                    <TextBlock FontSize="20">Масштабирование =</TextBlock>
+                    <TextBox FontSize="20" Name="Scale" Text="25"></TextBox>
+                </StackPanel>
+            </Grid>
+            <Grid Name="Graphic" Height="500" Width="500">
+            </Grid>
+
+        </StackPanel>
+        
+    </Grid>
+</Page>
